@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credit Risk Model Demo</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="module" src="./app.mjs"></script>
+<body>
+  <main>
+    <header>
+      <p class="course">AAI 6610 · Assignment 10</p>
+      <h1>Credit Risk Model Demo</h1>
+      <p>Explore how the neural network scores next-month default risk for fictional credit card profiles.</p>
+    </header>
+    <section class="panel" aria-labelledby="prediction">
+      <h2 id="prediction">Prediction</h2>
+      <label class="preset">Example profile <select id="examples" disabled></select></label>
+      <form id="profile">
+        <h3>Account details</h3>
+        <div id="account" class="account"></div>
+        <h3>Six months of payment history</h3>
+        <div id="history"></div>
+        <button id="run" type="submit" disabled>Run prediction</button>
+      </form>
+      <output id="result" role="status" aria-live="polite">Loading model…</output>
+      <p id="version" class="muted"></p>
+    </section>
+    <footer>Coursework demo. Use fictional inputs. The score is for illustration and should not guide real lending decisions.</footer>
+  </main>
+</body>
+</html>

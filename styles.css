@@ -1,0 +1,28 @@
+:root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #182b28; background: #f0f4f3; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(58rem, calc(100% - 2rem)); margin: 2.5rem auto; }
+header { margin-bottom: 1.5rem; }
+.course, .muted, footer { color: #4b625d; font-size: .9rem; }
+h1 { margin: .25rem 0; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; }
+h2 { margin: 0 0 .9rem; }
+h3 { font-size: 1.05rem; margin: 1.25rem 0 .5rem; }
+.panel { border: 1px solid #c9d7d3; background: white; border-radius: .75rem; padding: clamp(1rem, 4vw, 1.7rem); }
+label { display: flex; flex-direction: column; gap: .3rem; min-width: 0; font-size: .85rem; }
+.preset { max-width: 18rem; }
+.account { display: grid; grid-template-columns: repeat(5, 1fr); gap: .6rem; }
+.month-row { display: grid; grid-template-columns: 3rem repeat(3, 1fr); gap: .6rem; align-items: end; padding: .45rem 0; border-bottom: 1px solid #e6eceb; }
+.month-row strong { align-self: center; }
+input, select, button { font: inherit; border-radius: .35rem; min-height: 2.5rem; }
+input, select { width: 100%; min-width: 0; border: 1px solid #819893; background: white; color: inherit; padding: .25rem .45rem; }
+button { background: #174e43; color: white; border: none; cursor: pointer; padding: .5rem 1.1rem; font-weight: 650; margin: 1.1rem 0 .7rem; }
+button:disabled { opacity: .55; cursor: default; }
+:focus-visible { outline: 3px solid #2a7d6b; outline-offset: 3px; }
+output { display: block; background: #eaf4f1; padding: .65rem .8rem; border-radius: .35rem; font-weight: 600; }
+footer { margin: 1rem 0; }
+@media (max-width: 600px) {
+  .account { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .month-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .month-row strong { grid-column: 1 / -1; }
+  main { margin-top: 1.35rem; }
+}
