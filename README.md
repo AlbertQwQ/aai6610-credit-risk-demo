@@ -19,3 +19,8 @@ AAI 6610 coursework demonstration. Select a fictional credit card profile and ru
 ## Deployment
 
 Set the GitHub Actions repository variable `HF_SPACE_ID` to the target `owner/space-name` and store a write-capable token for that Space as the Actions repository secret `HF_TOKEN`. The workflow verifies predictions before syncing the main branch to a Static Space. The repository contains app files, fitted parameters and synthetic profiles.
+
+
+## Live demonstration
+
+[Open the coursework demo on Hugging Face](https://huggingface.co/spaces/AlbertQwQ/aai6610-credit-risk-demo). Choose a fictional profile, then select **Run prediction**.
